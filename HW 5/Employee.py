@@ -51,7 +51,6 @@ def main():
         print('Name:', Employee.get_Name())
         print('ID Number:', Employee.get_ID_Number())
         print('Department:', Employee.get_Department())
-        print('Job Title:', Employee.get_Job_Title())
+        print('Title:', Employee.get_Job_Title())
         print()
-
 main()

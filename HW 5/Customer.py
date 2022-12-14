@@ -42,8 +42,8 @@ class Customer(Person):
         return self.__Customer_Number
 
     #Boolean for Mailing List
-    def on_Mailing_List(self):
-        if self.__Mailing_List == 'Yes':
+    def get_Mailing_List(self):
+        if self.__Mailing_List == 'Yes' or 'yes':
             return True
         else:
             return False
@@ -56,6 +56,7 @@ def main():
     Telephone_Number = input('Enter the Phone Number: ')
     Customer_Number = input('Enter the Customer Number: ')
     Mailing_List = input('Does the customer want to be on the mailing list? (Yes or No): ')
+    print()
     
     #passing customer information 
     customer = Customer(Name, Address, Telephone_Number, Customer_Number, Mailing_List)
@@ -66,7 +67,7 @@ def main():
     print('Address: ', customer.get_Address())
     print('Phone Number: ', customer.get_Telphone_Number())
     print('Customer Number: ', customer.get_Customer_Number())
-    print('Mailing List: ', customer.on_Mailing_List())
+    print('On Mailing List: ', customer.get_Mailing_List())
         
 main()
 

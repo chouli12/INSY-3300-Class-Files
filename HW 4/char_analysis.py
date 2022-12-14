@@ -27,9 +27,3 @@ def main():
     print("\nSpaces: ", space)
 
 main()
-
-
-
-
-
-
